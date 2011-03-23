@@ -15,7 +15,7 @@
     <td><%=h page.content[0..25] if page.content %></td>
     <td><%=h page.locale %></td>
     <td><%=h page.permalink %></td>
-    <td><%= link_to 'Show', page %>&nbsp;&nbsp;|&nbsp;&nbsp; 
+    <td><%= link_to 'Show', "/pages/#{page.permalink}" %>&nbsp;&nbsp;|&nbsp;&nbsp; 
     <%= link_to 'Edit', edit_admin_page_path(page) %>&nbsp;&nbsp;|&nbsp;&nbsp; 
     <%= link_to 'Destroy', admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
