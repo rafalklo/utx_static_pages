@@ -1,5 +1,5 @@
 class Admin::PagesController < ApplicationController
-  before_filter :admin?  
+  before_filter :authenticate_user!  
   
   # GET /admin/pages
   # GET /admin/pages.xml
