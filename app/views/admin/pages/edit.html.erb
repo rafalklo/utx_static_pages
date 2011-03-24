@@ -1,6 +1,8 @@
 <% title "Edit Page" %>
 
-<%= render :partial => 'form' %>
+<% form_for(@page, :url => admin_page_path(@page)) do |f| %>
+	<%= render :partial => 'form', :locals => {:f => f} %>
+<% end %>
 
 <p>
   <%= link_to "Show", @page %> |
