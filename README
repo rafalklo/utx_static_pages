@@ -13,4 +13,4 @@ The project requires to use nifty_layout for the title helpers to work
 
 RedCloth is required for the content
 
- 
+The migration must be manually copied from the plugin into the application
