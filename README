@@ -1,4 +1,16 @@
-Static Pages is a Rails 2.3 Engine App which allows to have instant static pages added to the admin.
+Static Pages is a Rails 2.3 Engine App which allows to have instant static 
+pages added to the admin.
 
 The pages are loaded with a permalink and multiple locales are avaialable.
 
+===============================================================================
+
+There are a few requirements for this plugin to work:
+
+The project must use devise (or the pages controller needs to be changed)
+
+The project requires to use nifty_layout for the title helpers to work
+
+RedCloth is required for the content
+
+ 
