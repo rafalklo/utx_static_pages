@@ -14,7 +14,7 @@
     <tr>
       <td><%=h page.name %></td>
       <td><%=h page.permalink %></td>
-      <td><%=h page.content %></td>
+      <td><%=h page.content[0..20] + "..." %></td>
       <td><%=h page.locale %></td>
       <td><%=h page.meta_keywords %></td>
       <td><%=h page.meta_description %></td>

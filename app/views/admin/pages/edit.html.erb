@@ -4,7 +4,7 @@
 	<%= render :partial => 'form', :locals => {:f => f} %>
 <% end %>
 
-<p>
-  <%= link_to "Show", @page %> |
+<p>  
+  <%= link_to 'Show', "/pages/#{@page.permalink}" %> |
   <%= link_to "View All", admin_pages_path %>
 </p>
