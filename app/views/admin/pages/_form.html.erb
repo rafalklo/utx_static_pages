@@ -1,0 +1,28 @@
+<% form_for(@page, :url => admin_page_path(@page)) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :permalink %><br />
+    <%= f.text_field :permalink %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :locale %><br />
+    <%= f.select :locale, ["en", "fr"], :class => 'select' %>
+  </p>
+  <p>
+    <%= f.label :meta_keywords %><br />
+    <%= f.text_field :meta_keywords %>
+  </p>
+  <p>
+    <%= f.label :meta_description %><br />
+    <%= f.text_field :meta_description %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
